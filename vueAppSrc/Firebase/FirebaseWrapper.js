@@ -1,12 +1,12 @@
 import * as firebase from 'firebase'
 
 const config = {
-  apiKey: 'AIzaSyArPNxbrW44FGYBe6nJz8dX1lkTHKSELjk',
-  authDomain: 'x-team-vue-app.firebaseapp.com',
-  databaseURL: 'https://x-team-vue-app.firebaseio.com',
-  projectId: 'x-team-vue-app',
+  apiKey: '',
+  authDomain: '',
+  databaseURL: '',
+  projectId: '',
   storageBucket: '',
-  messagingSenderId: '17418064593'
+  messagingSenderId: ''
 }
 
 export default {
