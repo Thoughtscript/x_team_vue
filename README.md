@@ -32,6 +32,10 @@ vueAppSrc
 └── main.js
 ```
 
+This is a transpiled `.vue` only Vue app.
+
+Styling features a grid-only responsive layout.
+
 # NPM
 
 ```bash

@@ -48,8 +48,8 @@
                     </th>
                 </tr>
                 </thead>
-                <tbody v-for="contact in contacts">
-                <tr>
+                <tbody>
+                <tr v-for="contact in contacts">
                     <th>{{ contact.first_name }}</th>
                     <th>{{ contact.last_name }}</th>
                     <th>{{ contact.description }}</th>
@@ -122,137 +122,96 @@
 </script>
 
 <style scoped>
-    main.firebase > .tableOne {
-        grid-row: 1 / 20;
+    .tableOne,
+    .tableTwo,
+    .more,
+    .content,
+    h1,
+    table,
+    table > thead,
+    table > thead > tr,
+    table > tbody,
+    table > tbody > tr {
         grid-column: 1 / 6;
-        background-color: lightgray;
-        color: teal;
+    }
+
+    .tableOne,
+    .tableTwo,
+    .more,
+    .content,
+    table,
+    table > thead,
+    table > thead > tr,
+    table > tbody,
+    table > tbody > tr,
+    table > tbody > tr > th {
         display: grid;
     }
 
-    main.firebase > .tableOne > h1 {
-        grid-column: 1 / 6;
+    .tableOne, .tableTwo {
+        grid-row: 1 / 20;
+        background-color: lightgray;
+        color: teal;
+    }
+
+    h1 {
+        grid-row: 3 /2;
+        text-align: center;
+    }
+
+    table {
+        grid-row: 5 / 15;
+    }
+
+    table > thead {
         grid-row: 1 / 2;
     }
 
-    main.firebase > .tableOne > table {
-        grid-row: 2 / 20;
-        grid-column: 1 / 6;
-        display: grid;
-    }
-
-    main.firebase > .tableOne > table > thead {
-        grid-row: 1 / 5;
-        grid-column: 1 / 6;
-        display: grid;
-    }
-
-    main.firebase > .tableOne > table > thead > tr {
+    table > thead > tr {
         grid-row: 2;
-        grid-column: 1 / 6;
-        display: grid;
     }
 
-    main.firebase > .tableOne > table > thead > tr > th {
+    table > thead > tr > th {
         grid-row: 1;
         color: teal;
     }
 
-    main.firebase > .tableOne > table > tbody {
+    table > tbody {
         color: #32c3a2;
-        grid-row: 5/20;
-        grid-column: 1/6;
-        display: grid;
+        grid-row: 1/4;
     }
 
-    main.firebase > .tableOne > table > tbody > tr {
-        display: grid;
-    }
-
-    main.firebase > .tableOne > table > tbody > tr > th {
+    table > tbody > tr > th {
         color: #32c3a2;
-        grid-row: 2;
-        display: grid;
+        grid-row: 3;
         font-size: 15px;
     }
 
     main.firebase > .tableTwo {
         grid-row: 20 /45;
-        grid-column: 1 / 6;
         background-color: white;
         border-top: 1px dashed gray;
-        display: grid;
     }
 
-    main.firebase > .tableTwo > h1 {
-        grid-column: 1 / 6;
-        grid-row: 1 / 2;
-    }
-
-    main.firebase > .tableTwo > table {
-        grid-row: 3 / 20;
-        grid-column: 1 / 6;
-        display: grid;
-    }
-
-    main.firebase > .tableTwo > table > thead {
-        grid-row: 1 / 5;
-        grid-column: 1 / 6;
-        display: grid;
-    }
-
-    main.firebase > .tableTwo > table > thead > tr {
-        grid-row: 2;
-        grid-column: 1 / 6;
-        display: grid;
-    }
-
-    main.firebase > .tableTwo > table > thead > tr > th {
-        grid-row: 1;
-        color: teal;
-    }
-
-    main.firebase > .tableTwo > table > tbody {
-        color: #32c3a2;
-        grid-row: 5/20;
-        grid-column: 1/6;
-        display: grid;
-    }
-
-    main.firebase > .tableTwo > table > tbody > tr {
-        display: grid;
-    }
-
-    main.firebase > .tableTwo > table > tbody > tr > th {
-        color: #32c3a2;
-        grid-row: 2;
-        display: grid;
-        font-size: 15px;
-    }
-
-    main.firebase > .content {
+    .content {
         grid-row: 45 / 65;
-        grid-column: 1 / 6;
         background-color: lightgray;
         color: teal;
-        display: grid;
     }
 
-    main.firebase > .content > .text {
+    .content > .text {
         grid-row: 2;
         grid-column: 2;
         color: teal;
     }
 
-    main.firebase > .more {
+    .more {
         grid-row: 65 / 85;
-        grid-column: 1 / 6;
         background-color: white;
         border-top: 1px dashed gray;
-        display: grid;
     }
 
-    main.firebase > .more > .text {
+    .more > .text {
         grid-row: 2;
         grid-column: 2;
         color: teal;

@@ -13,8 +13,8 @@
                     </th>
                 </tr>
                 </thead>
-                <tbody v-for="example in hardcoded">
-                <tr>
+                <tbody>
+                <tr v-for="example in hardcoded">
                     <th>{{ example.pnumber }}</th>
                     <th>{{ example.country }}</th>
                 </tr>
@@ -65,85 +65,87 @@
 </script>
 
 <style scoped>
-    main.child > .table {
-        grid-row: 1 / 30;
+    .table,
+    .content,
+    .more,
+    table,
+    h1,
+    table > thead,
+    table > thead > tr,
+    table > tbody,
+    table > tbody > tr,
+    table > tbody > tr > th {
         grid-column: 1 / 6;
+    }
+
+    .table,
+    .more,
+    .content,
+    table,
+    table > thead,
+    table > thead > tr,
+    table > tbody,
+    table > tbody > tr {
         display: grid;
     }
 
-    main.child > .table > h1 {
-        grid-column: 1 / 6;
+    .table {
+        grid-row: 1 / 30;
+    }
+
+    .table > h1 {
         grid-row: 1 / 2;
     }
 
-    main.child > .table > table {
+    .table > table {
         grid-row: 2 / 20;
-        grid-column: 1 / 6;
-        display: grid;
     }
 
-    main.child > .table > table > thead {
+    .table > table > thead {
         grid-row: 1 / 5;
-        grid-column: 1 / 6;
-        display: grid;
     }
 
-    main.child > .table > table > thead > tr {
+    .table > table > thead > tr {
         grid-row: 2;
-        grid-column: 1 / 6;
-        display: grid;
     }
 
-    main.child > .table > table > thead > tr > th {
+    .table > table > thead > tr > th {
         grid-row: 1;
         color: teal;
     }
 
-    main.child > .table > table > tbody {
+    .table > table > tbody {
         color: #32c3a2;
         grid-row: 5/20;
-        grid-column: 1/6;
-        display: grid;
     }
 
-    main.child > .table > table > tbody > tr {
-        display: grid;
-    }
-
-    main.child > .table > table > tbody > tr > th {
+    .table > table > tbody > tr > th {
         color: #32c3a2;
         grid-row: 2;
-        display: grid;
         font-size: 15px;
     }
 
-    main.child > .content {
-        grid-row: 30 / 55;
-        grid-column: 1 / 6;
+    .content {
+        grid-row: 30 / 60;
         background-color: lightgray;
         color: teal;
-        display: grid;
     }
 
-    main.child > .content > .text {
+    .content > .text {
         grid-row: 2;
         grid-column: 2;
         color: teal;
     }
 
-    main.child > .more {
-        grid-row: 55 /95;
-        grid-column: 1 / 6;
+    .more {
+        grid-row: 60 / 90;
         background-color: white;
         border-top: 1px dashed gray;
-        display: grid;
     }
 
-    main.child > .more > .text {
+    .more > .text {
         grid-row: 2;
         grid-column: 2;
         color: teal;
     }
-
-
 </style>
