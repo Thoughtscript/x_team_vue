@@ -4,7 +4,7 @@ X-Team Vue Example For Blog Post: x-team.com/blog/vue-2-5/ - "Vue 2.5, Vue Route
 
 # What's Here?
 
-This repo contains a `Vue 2.6`, `webpack 3.6`, and `live-server 1.2` example show-casing a simplified hot-load dev server setup, some Vue 2.6 basics, and how to incorporate `Firebase 4.12.6` into the app.
+This repo contains a `Vue 2.5`, `webpack 3.6`, and `live-server 1.2` example show-casing a simplified hot-load dev server setup, some Vue 2.5.x basics, and how to incorporate `Firebase 4.12.6` into the app.
 
 The app project is setup like so:
 ```
