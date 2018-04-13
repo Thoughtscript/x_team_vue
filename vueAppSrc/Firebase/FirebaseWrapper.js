@@ -16,26 +16,26 @@ export default {
   },
 
   /** GET All */
-  fetchAll: (db, ref) => new Promise((resolve) => {
+  fetchAll: (db, ref) => new Promise(resolve => {
     db.ref(`/${ref}`)
       .once('value')
       .then(v => resolve(v.val()))
   }),
 
   /** GET One */
-  fetchOne: (db, ref, key) => new Promise((resolve) => {
+  fetchOne: (db, ref, key) => new Promise(resolve => {
     db.ref(`/${ref}/${key}`)
       .once('value')
       .then(v => resolve(v.val()))
   }),
 
   /** POST One */
-  addOne: (db, ref, key, contactData) => new Promise((resolve) => {
+  addOne: (db, ref, key, contactData) => new Promise(resolve => {
     resolve(db.ref(`/${ref}`).child(key).set(contactData))
   }),
 
   /** DELETE One */
-  removeOne: (db, ref, key) => new Promise((resolve) => {
+  removeOne: (db, ref, key) => new Promise(resolve => {
     resolve(db.ref(`/${ref}`).child(key).remove())
   })
 }

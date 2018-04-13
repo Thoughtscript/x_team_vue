@@ -116,13 +116,14 @@
 
     .table > table > tbody {
         color: #32c3a2;
-        grid-row: 5/20;
+        grid-row: 5/18;
     }
 
     .table > table > tbody > tr > th {
         color: #32c3a2;
-        grid-row: 2;
+        grid-row: 1;
         font-size: 15px;
+        grid-column: span 1;
     }
 
     .content {

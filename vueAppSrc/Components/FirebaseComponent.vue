@@ -23,8 +23,8 @@
                 <tr>
                     <th>{{ contact.first_name }}</th>
                     <th>{{ contact.last_name }}</th>
-                    <th>{{ contact.description }}</th>
                     <th>{{ contact.email }}</th>
+                    <th>{{ contact.description }}</th>
                 </tr>
                 </tbody>
             </table>
@@ -52,8 +52,8 @@
                 <tr v-for="contact in contacts">
                     <th>{{ contact.first_name }}</th>
                     <th>{{ contact.last_name }}</th>
-                    <th>{{ contact.description }}</th>
                     <th>{{ contact.email }}</th>
+                    <th>{{ contact.description }}</th>
                 </tr>
                 </tbody>
             </table>
@@ -88,7 +88,7 @@
       this.addContact('0005', {
         'description': 'is silly ',
         'email': 'mr.bean@gmail.com',
-        'first_name': 'Mr.',
+        'first_name': 'Mister',
         'last_name': 'Bean'
       })
     },
@@ -102,7 +102,7 @@
       populateContacts () {
         const that = this
         fbw.fetchAll(db, 'contacts').then((v) => {
-          that.users = v
+          that.contacts = v
         })
       },
       removeContact (key) {
@@ -155,20 +155,20 @@
     }
 
     h1 {
-        grid-row: 3 /2;
         text-align: center;
+        grid-row: 4;
     }
 
     table {
-        grid-row: 5 / 15;
+        grid-row: 2/10;
     }
 
     table > thead {
-        grid-row: 1 / 2;
+        grid-row: 2;
     }
 
     table > thead > tr {
-        grid-row: 2;
+        grid-row: 1;
     }
 
     table > thead > tr > th {
@@ -178,7 +178,7 @@
 
     table > tbody {
         color: #32c3a2;
-        grid-row: 1/4;
+        grid-row: 2;
     }
 
     table > tbody > tr > th {
