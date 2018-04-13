@@ -1,0 +1,28 @@
+{
+    "contacts" : {
+        "0001" : {
+            "description" : "a dude guy",
+            "email" : "adam.gerard@x-team.com",
+            "first_name" : "Adam",
+            "last_name" : "Gerard"
+        },
+        "0002" : {
+            "description" : "rockstar scientist",
+            "email" : "science@iscool.com",
+            "first_name" : "Marie",
+            "last_name" : "Curie"
+        },
+        "0003" : {
+            "description" : "visionary philosopher",
+            "email" : "tractatus@philosophic.us",
+            "first_name" : "Ludwig",
+            "last_name" : "Wittgenstein"
+        },
+        "0004" : {
+            "description" : "extraordinary ",
+            "email" : "human.being@person.me",
+            "first_name" : "J",
+            "last_name" : "Everyperson"
+        }
+    }
+}

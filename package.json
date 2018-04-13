@@ -1,0 +1,45 @@
+{
+  "name": "x_team_vue",
+  "version": "1.0.0",
+  "description": "X-Team Vue 2.5 Firebase demonstration",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "node hotserver.js",
+    "all": "npm run build & npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thoughtscript/x_team_vue.git"
+  },
+  "engines": {
+    "node": "=8.8.0"
+  },
+  "keywords": [
+    "Vue",
+    "2.5",
+    "Firebase"
+  ],
+  "author": "Adam I. Gerard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Thoughtscript/x_team_vue/issues"
+  },
+  "homepage": "https://github.com/Thoughtscript/x_team_vue#readme",
+  "devDependencies": {
+    "babel-core": "=6.26.0",
+    "babel-loader": "=7.1.4",
+    "babel-preset-env": "=1.6.1",
+    "babel-preset-stage-0": "=6.24.1",
+    "css-loader": "=0.28.11",
+    "extract-text-webpack-plugin": "=3.0.2",
+    "firebase": "=4.12.1",
+    "live-server": "=1.2.0",
+    "vue": "=2.5.16",
+    "vue-loader": "=14.2.2",
+    "vue-style-loader": "=4.1.0",
+    "vue-router": "=3.0.1",
+    "vue-template-compiler": "=2.5.16",
+    "webpack": "=3.6.0"
+  },
+  "dependencies": {}
+}
