@@ -1,13 +1,5 @@
 import * as firebase from 'firebase'
-
-const config = {
-  apiKey: '',
-  authDomain: '',
-  databaseURL: '',
-  projectId: '',
-  storageBucket: '',
-  messagingSenderId: ''
-}
+import { config } from '../../firebaseCredentials'
 
 export default {
   db: () => {

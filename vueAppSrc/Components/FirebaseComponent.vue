@@ -156,15 +156,15 @@
 
     h1 {
         text-align: center;
-        grid-row: 4;
+        grid-row: 3 / span 1;
     }
 
     table {
-        grid-row: 2/10;
+        grid-row: 4/15;
     }
 
     table > thead {
-        grid-row: 2;
+        grid-row: span 1;
     }
 
     table > thead > tr {
@@ -178,13 +178,21 @@
 
     table > tbody {
         color: #32c3a2;
-        grid-row: 2;
+        grid-row: 2 / 9;
+    }
+
+    table > tbody > tr {
+        grid-row: span 1;
+        grid-column: 1/6;
+        grid-template-columns: repeat(4, 1fr);
     }
 
     table > tbody > tr > th {
         color: #32c3a2;
-        grid-row: 3;
+        grid-row: 1;
+        text-align: center;
         font-size: 15px;
+        grid-column: span 1;
     }
 
     main.firebase > .tableTwo {

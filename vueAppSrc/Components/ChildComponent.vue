@@ -124,6 +124,7 @@
         grid-row: 1;
         font-size: 15px;
         grid-column: span 1;
+        text-align: center;
     }
 
     .content {

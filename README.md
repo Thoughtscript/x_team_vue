@@ -2,6 +2,8 @@
 
 X-Team Vue Example For Blog Post: x-team.com/blog/vue-2-5/ - "Vue 2.5, Vue Router, and Firebase"!
 
+Make sure to create a Firebase app here: https://firebase.google.com/ and then copy your credentials into `firebaseCredentials.js`.
+
 # What's Here?
 
 This repo contains a `Vue 2.5`, `webpack 3.6`, and `live-server 1.2` example show-casing a simplified hot-load dev server setup, some Vue 2.5.x basics, and how to incorporate `Firebase 4.12.6` into the app.
@@ -10,11 +12,11 @@ The app project is setup like so:
 ```
 vueAppSrc
 ├── firebase
-|		└── //... Test data
+|	└── //... Test data
 ├── public
-|		└── //... Static file serve
+|	└── //... Static file serve
 ├── vueAppSrc
-|		└── //... The Vue App
+|	└── //... The Vue App
 ├── hotserver.js //... A slim, configurable, hot-dev server
 └── webpack.config.js //The base webpack configuration with prod/dev options
 ```
@@ -23,11 +25,11 @@ The Vue App itself:
 ```
 vueAppSrc
 ├── Components
-|		└── //... Vue presentation cmponents
+|	└── //... Vue presentation cmponents
 ├── Firebase
-|		└── //... Firebase helpers here
+|	└── //... Firebase helpers here
 ├── Router
-|		└── //... Router here
+|	└── //... Router here
 ├── App.vue
 └── main.js
 ```
